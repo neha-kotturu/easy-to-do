@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>To Do List</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="nav">
+			<h1 id="header"><a href="/">Easy To-Do</a></h1>
+			<!--<h1 id="link"><a href="/">About</a></h1>-->
+		</div>
+		
+		<!--<div id="alert"></div>-->
+
+		<div class="container">
+			<div id="newtask">
+				<input id = "task" type="text" placeholder="Enter task">
+				<div id="addTask">
+					<div class="custom-select"> 
+						<select name="importance" id="importance">
+							<option value="null">Priority ▽</option>							
+							<option value="0">!!!</option>
+							<option value="1">!!</option>
+							<option value="2">!</option>
+						</select>
+					</div>
+					<button id="push">Add</button>
+				</div>
+			</div>
+			<div id="filters">
+				<div id="btns">
+					<button id="all" class="filter">All</button>
+					<button id="urgent" class="filter">!!!</button>
+					<button id="important" class="filter">!!</button>
+					<button id="normal" class="filter">!</button>
+					<button id="deleted" class="filter">
+						<span class="material-icons-outlined" style="font-size: 20px">delete</span>
+					</button>
+				</div>
+				<div class="search">
+					<input type="text" id="searchTerm" placeholder="Search for task">
+					<button id="searchButton">
+						<span class="material-icons-outlined" style="color:white;">search</span>
+					</button>
+				</div>
+			</div>
+			<div id="tasks"></div>
+
+			<div id="colors">
+				<div class="color-select" id="bg1" data-bg-id="1"></div>
+				<div class="color-select" id="bg2" data-bg-id="2"></div>
+				<div class="color-select" id="bg3" data-bg-id="3"></div>
+				<div class="color-select" id="bg4" data-bg-id="4"></div>
+				<div class="color-select" id="bg5" data-bg-id="5"></div>
+				<div class="color-select" id="bg6" data-bg-id="6"></div>
+				<div class="color-select" id="bg7" data-bg-id="7"></div>
+			</div>
+		</div>
+		<footer>
+			<h6>
+				&copy; 
+				<script>
+					document.write(new Date().getFullYear() + " - "); 
+					document.write(new Date().getFullYear()+1);
+				</script> 
+				Neha Kotturu | All Rights Reserved
+			</h6>
+		</footer>
+		
+		<script src="js/customSelect.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

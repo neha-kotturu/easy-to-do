@@ -1,0 +1,518 @@
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*.nav {
+	display: flex;
+	justify-content: space-between;
+}*/
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#header {
+	color: white;
+	padding: 0.5em 0 0 1em;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em 20% 2rem; 
+	height: 90vh;
+}
+
+.container > div {
+	margin: 1rem 0;
+	width: 100%;
+}
+
+
+#newtask {
+	position: relative;
+	background-color: #ffffff;
+	padding: 2em 1.3em;
+	border-radius: 5px;
+	display: flex;
+	width: 100%;
+}
+
+
+#task {
+	width: 100%;
+	margin-right: 10em;
+}
+
+#addTask {
+	display: flex;
+	width: 100%;
+}
+
+#newtask input {
+	width: 60%;
+	height: 3em;
+	font-size: 1em;
+	border: 2px solid #d1d3d4;
+	padding: 1em;
+	border-radius: 5px;
+	margin-right: 1.5em;
+}
+
+#push {
+	width: 90%;
+	height: 3em;
+	border-radius: 5px;
+	font-size: 1em;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* custom select css credit to w3schools */
+.custom-select {
+	position: relative;
+	width: 90%;
+	margin-right: 1.5em;
+	height: 3em;
+	text-align: center;	
+	font-size: 1em;
+}
+
+.custom-select select {
+	display: none; 
+}
+
+.select-items div, .select-selected {
+	color: #ffffff;
+	padding: 0.7em;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+}
+
+.select-items {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.select-hide {
+	display: none;
+}
+.select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+/* end of custom select css */
+
+#filters {
+	background: white;
+	border-radius: 5px;
+	padding: 1em;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.filter {
+	margin: 0.2em 1em 0.2em 0;
+	width: 3.5em;
+	height: 3em;
+	font-size: 1em;
+	border-radius: 5px;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.search {
+	display: flex;
+	margin: 0.2em 0;
+}
+
+#searchTerm {
+	width: 100%;
+	height: 3em;
+	border-radius: 5px;
+	border: 2px solid #d1d3d4;
+	margin-right: 16px;
+	font-size: 1em;
+	padding: 1em;
+}
+
+#searchButton {
+	text-align: center;
+	padding: 0.4em;
+	width: 3em;
+	height: 3em;
+	border-radius: 5px;
+	border: 0;
+	fill: white;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+#tasks {
+	max-height: 85vh;
+	background-color: #ffffff;
+	padding: 2em 1.3em;
+	border-radius: 5px;
+	width: 100%;
+	position: relative;
+	overflow-y: scroll;
+}
+
+.task {
+	background-color: #ffffff;
+	height: 3.2em;
+	padding: 0.3em 0.6em;
+	margin-top: 0.6em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid #d1d3d4;
+	cursor: pointer;
+}
+
+.task span {
+	font-size: 1em;
+}
+
+.task button {
+	color: #ffffff;
+	height: 100%;
+	width: 3em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.important1 {
+	color: green;
+}
+
+.important2 {
+	color: yellow;
+}
+
+.important3 {
+	color: red;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+h6 {
+	padding-top: 1.5em;
+	padding-right: 1em;
+	color: white;
+}
+
+#colors {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	background: rgba(0, 0, 0, 0.58);
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 1em 2em;
+}
+
+.color-select {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 25px;
+	transition: 200ms;
+}
+
+.color-select:hover {
+	transform: scale(120%);
+}
+
+#bg1 {
+	border: 1px solid linear-gradient(to right, #8e0e00, #1f1c18);
+	background: linear-gradient(to right, #8e0e00, #1f1c18);
+}
+
+#bg2 {
+	border: 1px solid linear-gradient(to right, #c02425, #f0cb35);
+	background: linear-gradient(to right, #c02425, #f0cb35);
+}
+
+#bg3 {
+	border: 1px solid linear-gradient(to right, #ffe000, #799f0c);
+	background: linear-gradient(to right, #ffe000, #799f0c);
+}
+
+#bg4 {
+	border: 1px solid linear-gradient(to right, #283c86, #45a247);
+	background: linear-gradient(to right, #283c86, #45a247);
+}
+
+#bg5 {
+	border: 1px solid linear-gradient(to right, #000046, #1cb5e0);
+	background: linear-gradient(to right, #000046, #1cb5e0);
+}
+
+#bg6 {
+	border: 1px solid linear-gradient(to right, #654ea3, #eaafc8);
+	background: linear-gradient(to right, #654ea3, #eaafc8);
+}
+
+#bg7 {
+	border: 1px solid linear-gradient(to right, #c0392b, #8e44ad);
+	background: linear-gradient(to right, #c0392b, #8e44ad);
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.nav h1, #link{
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.2em;
+		padding-top: 0.4em;
+		padding-right: 0.4em;
+		color: white;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:visited {
+		text-decoration: none;
+		color: white;
+	}
+
+	#link {
+		float: right;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem 5%;
+		height: auto;
+	}
+
+	#newtask, #filters, #tasks, #colors {
+		margin: 0.5em 0 2em 0;
+		width: 100%;
+	}
+
+	#newtask {
+		position: relative;
+		background-color: #ffffff;
+		padding: 0.5em;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#newtask input {
+		width: 100%;
+		height: 3em;
+		font-size: 15px;
+		border: 2px solid #d1d3d4;
+		padding: 1em;
+		position: relative;
+		border-radius: 5px;
+		margin-right: 2em;
+	}
+	
+	#addTask {
+		margin-top: 1em;
+	}
+
+	/* custom select css credit to w3schools */
+
+	.custom-select {
+		width: 100%;
+	}
+	
+	.custom-select select {
+		display: none; 
+	}
+
+	.select-selected.select-arrow-active:after {
+		margin-top: 0;
+		border-color: transparent transparent #fff transparent;
+	}
+
+	.select-items div, .select-selected {
+		color: #ffffff;
+		padding: 0.8em;
+		max-height: 3em;
+		border-radius: 5px;
+		border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+		cursor: pointer;
+	}
+
+	.select-items {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 99;
+	}
+
+	.select-hide {
+		display: none;
+	}
+	.select-items div:hover, .same-as-selected {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	/* end of custom select css */
+	
+	#push {
+		position: relative;
+		float: right;
+		height: 3em;
+		border-radius: 5px;
+		font-size: 1em;
+		color: #ffffff;
+		cursor: pointer;
+	}
+
+	#filters {
+		background: white;
+		border-radius: 5px;
+		padding: 0.5em;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#btns {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.filter {
+		margin: 0;
+		height: 2.5em;
+		font-size: 1em;
+		border-radius: 5px;
+		border: none;
+		color: #ffffff;
+		cursor: pointer;
+		width: 3.5em;
+	}
+
+	.search {
+		display: flex;
+		margin-top: 1em;
+		justify-content: center;
+		
+	}
+
+	#searchTerm {
+		width: 100%;
+		height: 3.2em;
+		border-radius: 5px;
+		border: 2px solid #d1d3d4;
+		font-size: 0.8em;
+		padding: 0.2em 0.2em 0.2em 0.5em;
+		margin-right: 1em;
+		
+	}
+
+	#searchButton {
+		text-align: center;
+		padding: 0.4em;
+		height: 2.5em;
+		border-radius: 5px;
+		border: 0;
+		fill: white;
+		cursor: pointer;
+		font-size: 1em;
+	}
+
+	#tasks {
+		background-color: #ffffff;
+		padding: 2em 1.5em;
+		border-radius: 5px;
+		width: 100%;
+		position: relative;
+		overflow-y: scroll;
+		max-height: 30em;
+	}
+
+	.task {
+		background-color: #ffffff;
+		height: 3.2em;
+		padding: 0.3em 0.6em;
+		margin-top: 0.6em;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 2px solid #d1d3d4;
+		cursor: pointer;
+	}
+
+	.task span {
+		font-size: 1em;
+	}
+
+	.task button {
+		background-color: red;
+		color: #ffffff;
+		height: 100%;
+		width: 3em;
+		border-radius: 5px;
+		border: none;
+		cursor: pointer;
+	}
+
+
+	#colors {
+		width: 80%;
+		display: flex;
+		justify-content: space-evenly;
+		background: rgba(0, 0, 0, 0.58);
+		border: 1px solid transparent;
+		border-radius: 5px;
+		padding: 1em;
+		margin-bottom: 0;
+	}
+	
+	.color-select:hover {
+		transform: translateY(0px);
+	}
+	
+	footer {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		height: 3em;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	h6 {
+		padding-top: 1.5em;
+		padding-right: 1em;
+		color: white;
+	}
+}
